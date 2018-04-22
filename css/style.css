@@ -1,0 +1,269 @@
+/*
+File Name: style.css
+Date: 02/15/18
+Programmer: jeremy alexander
+*/
+
+/* Color Palette: http://www.colourlovers.com/palette/911024/Indian_Summer */
+
+/* MOBILE STYLESHEET */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    float: none; 
+    background-color: #ffffff;
+}
+
+header {
+    font-family: 'Rubik', sans-serif;
+}
+
+footer {
+    padding: .1em;
+    background-color: #FF9830;
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: .2em;
+    padding-top: .2em;
+    font-size: 2em;
+    line-height: 1.5em;
+    word-spacing: .4em;
+    letter-spacing: .2em;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: .75em;
+    padding-top: 1.5em;
+    margin-left: auto;
+    font-size: 1.6em;
+    word-spacing: .25em;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    font-size: 1.4em;
+    word-spacing: .2em;
+}
+
+h4 {
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-size: 1.2em;
+    word-spacing: .2em;
+}
+
+ul {
+    list-style: square;
+    list-style-position: inside;
+    text-indent: .2em;
+    text-align: center;
+}
+
+li { 
+    padding: .8em;
+    line-height: 2em;
+}  
+
+p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 2em;
+    padding: 1.5em;
+} 
+
+a {
+    color: #DE442C;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+a:visited, a:hover {
+    color: #590325;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/* ID's and Classes in decending order */
+
+#chefs {
+    width: 100%;
+}
+
+#contact {
+    width: 100%;
+}
+
+#menu-choices {
+    padding-bottom: 2em;
+}
+
+#order {
+    width: 100%;
+    background-color: #f9ffff;
+}
+
+#social {
+    padding: 1em;
+    text-align: center;
+}
+
+.designed-by {
+    font-size: 12px;
+}
+
+.hero-image {
+    background-image: url("../images/portland-hero-image.jpg");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-image-2 {
+    background-image: url("../images/toppings.jpeg");
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.image-opacity {
+    opacity: 0.6;
+    padding: .5em;
+    filter: alpha(opacity=60);
+}
+
+.image-opacity:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+.logo-thumbnail {
+    height: 6em;
+    width: 7em;
+    padding: .6em;
+}    
+
+/*
+
+TABLET STYLESHEET
+
+The following CSS affects all screen sizes larger than 480 pixels wide.
+
+*/
+
+@media only screen and (min-width: 481px) {
+
+body {
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+main, footer {
+    padding-top: .1em;
+    padding-bottom: .1em;
+}
+    
+h1 {
+    padding-bottom: .4em;
+    padding-top: .2em;
+    font-size: 3em;
+    line-height: 1.5em;
+    word-spacing: .4em;
+    letter-spacing: .2em;
+}
+
+h2 {
+    padding-bottom: 1em;
+    font-size: 2em;
+    word-spacing: .3em;
+}
+
+h3 {
+    font-size: 1.6em;
+    word-spacing: .3em;
+}
+
+h4 {
+    font-size: 1.4em;
+    word-spacing: .2em;
+}    
+
+ul {
+    text-indent: .5em;
+}
+
+li { 
+    padding: 1em;
+}      
+    
+p { 
+    line-height: 2em;
+    font-size: 20px;
+}  
+    
+iframe {
+    width: 100%;
+    height: 450px;
+}       
+
+/* ID's and Classes in decending order - Tablet stylesheet modifications */    
+    
+.hero-image {
+    background-image: url("../images/portland-hero-image.jpg");
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} 
+    
+.hero-image-2 {
+    background-image: url("../images/toppings.jpeg");
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}     
+
+.image-opacity{
+    min-width: 100%;
+    height: 400px;
+    padding: 1em;
+} 
+    
+}
+    
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+
+@media only screen and (min-width: 1025px) {
+    #container {
+        margin: 0 1em;
+    }
+
+}

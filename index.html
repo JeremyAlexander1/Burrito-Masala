@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Burrito Masala</title>
+    <meta name="description" content="Burrito Masala is a food cart located SW 3rd and Alder in downtown Portland, OR. We offer southern Indian (Kerala) and Mexican foods.">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/helper.css" type="text/css">
+    <link rel="stylesheet" href="css/grid.css" type="text/css">
+    <!-- font families imported from https://fonts.googleapis.com --> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+</head>
+<body>
+        
+    <header class="hero-image">
+        <img src="images/burrito-masala-logo.jpg" class="logo-thumbnail" alt="burrito masala logo">
+        <h1>BURRITO MASALA</h1>
+    </header>
+        
+    <main>
+         <!-- 'Back to Top' button appears after 20px of scrolling -->
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+        <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+    
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        
+                    document.getElementById("topBtn").style.display = "block";
+    
+                } else {
+    
+                    document.getElementById("topBtn").style.display = "none";
+                }
+            }
+
+
+            // When the user clicks on the button, scroll to the top of the document
+
+            function topFunction() {
+    
+                document.body.scrollTop = 0;
+    
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        
+        <h2>ABOUT OUR CART</h2>
+        <p>Burrito Masala is a food cart located in downtown Portland, Oregon on the corner of SW 3rd and Alder. Burrito Masala specializes in cooking delicious southern Indian (Kerala) and Mexican food. Burrito Masala offers options to build burritos or bowls, and you can pick your ingredients.</p>
+            
+            <section class="section group">
+                <h2>ORDERING PROCESS</h2>
+                <section class="col span_2_of_12">    
+                <h4>Step 1</h4>
+                <p>Choose a Burrito or a Bowl</p>    
+                </section>
+                <section class="col span_2_of_12">    
+                <h4>Step 2</h4>
+                <p>Pick ONE Meat or Veggie</p>
+                </section>
+                <section class="col span_2_of_12">    
+                <h4>Step 3</h4>
+                <p>Pick ONE Rice</p>
+                </section>
+                <section class="col span_2_of_12">    
+                <h4>Step 4</h4>
+                <p>Choose Toppings and Condiments</p>
+                </section>
+                <section class="col span_2_of_12">    
+                <h4>Step 5</h4>
+                <p>Place Order and Pickup (Walk-Ups Accepted)</p>
+                </section>
+                <section class="col span_2_of_12">    
+                <h4>Step 6</h4>
+                <p>Enjoy!</p>
+                </section>    
+            </section>
+            
+        <!-- responsive grid used to create column width 50% for larger resolutions --> 
+            
+            <section class="section group">
+                <h3>CHOOSE ONE</h3>
+                <section class="col span_6_of_12">    
+                <img src="images/burrito.jpg" alt="burrito option" class="image-opacity">
+                <h4>BURRITO</h4>
+                </section>
+                
+                <section class="col span_6_of_12">  
+                <img src="images/bowl.jpg" alt="bowl option" class="image-opacity">
+                <h4>BOWL</h4>
+                </section>
+            </section>
+            
+        <!-- change individual ingredients in any list item below -->
+        <section id="menu-choices">
+            <h3>CHOOSE YOUR INGREDIENTS</h3>
+            <img src="images/toppings.jpeg" class="hero-image-2" alt="toppings">
+            <h4>Meat Options</h4>
+            <ul>
+            <li>Chicken Tikka Masala</li>
+            <li>Lamb Curry</li>
+            <li>Pork in salsa verde</li>
+            </ul>   
+            
+            <h4>Veggie Options</h4>
+            <ul>
+            <li>Sambar (lentil curry, vegan)</li>
+            <li>Aloo gobi masala (potato and cauliflower, vegan)</li>
+            <li>Chile relleno (vegetarian, contains cheese)</li>
+            </ul>
+            
+            <h4>Rice (All Vegan)</h4>
+            <ul>
+            <li>Kerala biryani</li>
+            <li>Spanish rice</li>
+            <li>White or brown rice (khaima)</li>
+            </ul>
+            
+            <h4>Toppings</h4>
+            <ul>
+            <li>Mango Chutney</li>
+            <li>Tomatillo Salsa</li>
+            <li>Raita</li>
+            <li>Grandma Nena’s Fiery Red Salsa</li>
+            <li>Cheese</li>
+            <li>Sour cream</li>
+            <li>Onions</li>
+            <li>Tomatoes</li>
+            <li>Cucumbers</li>
+            <li>Cilantro</li>
+            <li>Guacamole ($.75 extra!)</li>
+            </ul>
+        </section>
+        
+        <section id="order">
+            <h3>HOW TO PLACE AN ORDER</h3>
+            <p><a href="tel:503-555-5555">CALL US NOW TO PLACE AN ORDER</a> 
+            <p>Order via <a href="tel:503-555-5555">SMS: 503-555-5555</a>
+            <br>Walk-ups are accepted as well at our SW 3rd and Alder food cart located in downtown Portland, OR.</p>
+        </section>    
+        
+        <section id="chefs">
+            <h3>MEET OUR CHEFS</h3>
+            <img src="images/chef-1.jpeg" alt="chefs">
+            <p>Burrito Masala is created and operated by husband and wife team (James Beard award-winning chefs Prasad Varma and Ramona Varma-Hernandez). The Burrito Masala experience is unique between the ordering process of allowing customers to assemble their own meals, consuming diverse cultures foods, and the interactive service from award-winning chefs.</p>
+        </section>
+        
+        <img src="images/kerala-landscape.jpg" alt="kerala">   
+    </main>
+        
+    <footer>
+        <section id="contact">
+            <h2>CONTACT US</h2>    
+            <p>Hours of Operation: Open 7 days a week - 11:00 AM to 7:00 PM</p> 
+            <p>Location: Corner of SW 3rd and Alder, Portland OR.</p>
+            <p>Contact: <a href="tel:503-555-5555">503-555-5555</a> SMS orders available (tap to call on a mobile device)</p>
+        </section>    
+        
+        <!-- google interactive maps api inside iframe. go to https://console.developers.google.com to get a free API key. -->
+        <h2>GOOGLE MAPS</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d646.4598480464908!2d-122.67495290751525!3d45.51911807123923!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1518928766885" style="border:0" allowfullscreen></iframe>
+        
+        <!-- the current social media section links to the home page of each platform listed. update 'a href' with burrito masala's external links -->
+        <section id="social">
+            <h3>SOCIAL MEDIA</h3>
+            <a href="https://www.facebook.com/"><img src="images/icons8-facebook-48.png" alt="facebook"></a>
+            <a href="https://twitter.com/"><img src="images/icons8-twitter-48.png" alt="twitter"></a>
+            <a href="https://www.pinterest.com/"><img src="images/icons8-pinterest-50.png" alt="pinterest"></a>
+            <a href="https://www.yelp.com/"><img src="images/icons8-yelp-48.png" alt="yelp"></a>
+        </section>
+        
+        <p class="designed-by">&copy;2018 Website Designed by Jeremy Alexander</p>
+    </footer>
+        
+</body>
+</html>
